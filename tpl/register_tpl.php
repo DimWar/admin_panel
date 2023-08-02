@@ -79,12 +79,7 @@
                             <!-- Edite User -->
                             <a href="?edite_user=<?= $values['phone']; ?>"><span class="material-symbols-outlined iconEdite open" >edit</span></a>
                             <!-- Ediet Modal Box -->
-                            <div class="modal_overlay">
-                                    <div class="modal">
-                                        <span class="material-symbols-outlined close_edit_box">cancel</span>
-                                        <h2>Edite user data</h2>
-                                        <div class="content_edit_box" style="direction: ltr;">
-                            </div>
+                            
                             <div class="modal_editeAll">
                                     <div class="modal">
                                         <span class="material-symbols-outlined close_edit_box">cancel</span>
@@ -113,31 +108,7 @@
 
 
 
-    <!-- cdn jquery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <!--start ajax codes -->
-    <script>
-            
-            $(document).ready(function(){
-                //satart open and close edite input
-                $('.open').click(function(){
-                    $('.modal_overlay').fadeIn(500);
-                });
-                $('.close_edit_box').click(function(){
-                    $('.modal_overlay').fadeOut(500);
-                }); 
-                //end open and close edite input
-                //satart open and close edite input
-                $('.openEditeAll').click(function(){
-                    $('.modal_editeAll').fadeIn();
-                });
-                $('.close_edit_box').click(function(){
-                    $('.modal_editeAll').fadeOut();
-                }); 
-                //end open and close edite input
-                //start ajax register user to database
-        });
-    </script>
-    <!--end ajax codes -->
+
 </body>
 </html> 
