@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'shabnam-medium';
+    src: url(../font/Shabnam-Medium.woff)format('woff2'),
+    url(../font/Shabnam.woff)format('woff');
+}
+:root{
+    --primary-color: #d0cccc;
+    --box-color: rgb(110, 185, 194);
+    --main-color: #B7C4CF;
+    --head-color: #183e4b;
+}
+
+/*style full page*/
+
+*{
+    font-family: 'shabnam-medium';
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0px;
+    direction: rtl;
+}
+
+/*style body*/
+
+
+
+.modal_overlay {
+    background: #575757ad;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.modal_editeAll {
+    background: rgb(255,255,255);
+    background: linear-gradient(320deg, rgba(255,255,255,1) 58%, rgb(223, 223, 223) 38%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* display: none; */
+    
+}
+.editetitleh2{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(45, 45, 45);
+}
+.modal {
+    background: rgb(255, 255, 255);
+    margin: 57px auto;
+    width: 30%;
+    direction: rtl;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 250px;
+    
+}
+
+.modal_editeAll input{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    margin: 9px auto 9px 22%;
+    padding: 14px;
+    box-shadow: 0px 1px 7px 0px rgb(70, 71, 70);
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+a.iconDelete,.iconEdite{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+ }
+ 
+ .iconDelete:hover{
+     color: rgb(255, 0, 0);
+ }
+ 
+ .iconEdite:hover{
+     color: rgb(75, 75, 239);
+ }
+ .iconEditeAll{
+     color: #0964b0;
+     cursor: pointer;
+ }
+ .iconEditeAll:hover{
+     color: #3375ab;
+ }
+
+ .submitHover:hover{
+    background-color: #64c557;
+}
+
+.submitHoverUpdate:hover{
+    background-color: #64c557;
+}
+
+input.submitUpdate.submitHoverUpdate {
+    text-align: center;
+}
+
+.editetitleh2,h4{
+    text-align: center;
+    padding: 10px;
+    margin: -22px;
+    color: rgb(45, 45, 45);
+}

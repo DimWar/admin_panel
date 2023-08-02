@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'shabnam-medium';
+    src: url(../font/Shabnam-Medium.woff)format('woff2'),
+    url(../font/Shabnam.woff)format('woff');
+}
+:root{
+    --primary-color: #ffffff;
+    --box-color: rgb(110, 185, 194);
+    --main-color: #B7C4CF;
+    --head-color: #183e4b;
+}
+
+/*style full page*/
+
+*{
+    font-family: 'shabnam-medium';
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    direction: rtl;
+}
+
+/*style body*/
+body{
+    background-color: var(--primary-color);
+}
+/*Log in and register*/
+form{
+    max-width: 470px;
+    height: 395;
+    background: rgb(255,165,0);
+    background: linear-gradient(42deg, rgb(228 228 228) 35%, rgba(255,255,255,1) 20%, rgba(255,165,0,1) 47%, rgba(255,255,255,1) 47%, rgb(174 174 174) 88%, rgba(255,255,255,1) 88%, rgb(194 194 194) 88%);;
+    margin: 100px auto;
+    padding: 70px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 20px 0px rgb(64, 51, 51);
+}
+
+.h-1{
+    text-align: center;
+    color: #434343;
+    font-family: revert;
+}
+
+.login input{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    margin: 5px auto 10px  35% ;
+    padding: 14px;
+    box-shadow: 0px 1px 7px 0px rgb(70, 71, 70);
+    outline: none;
+    cursor: pointer;
+}
+.modal_editeAll input{
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    margin: 9px auto 9px 22%;
+    padding: 14px;
+    box-shadow: 0px 1px 7px 0px rgb(70, 71, 70);
+    outline: none;
+    cursor: pointer;
+}
+
+.login input[name="submit"]{
+    color: white;
+    background-color: #1beb22;
+    max-width: 57px;
+    border-radius: 4px;
+    padding: 2px;
+    display: block;
+    /*box-shadow: 0px 1px 7px 0px rgb(82, 89, 82);*/
+}
+
+.submitHover:hover{
+    background-color: #64c557;
+}
+
+.submitHoverUpdate:hover{
+    background-color: #64c557;
+}
+/* form:hover input[placeholder*="..."]{
+    box-shadow: 0px 1px 7px 0px rgb(101, 98, 98);
+} */
+
+.login input[name="submit"]:hover{
+    background-color: #31d200;
+    cursor: pointer;
+}
+
+
+.redirectRegister{
+    width: 30%;
+    text-decoration: none;
+    color: #505050;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    margin: 10px;
+    padding: 2px;
+    box-shadow: 0px 1px 7px 0px rgb(70, 71, 70);
+    outline: none;
+    background-color: #c064bc;
+    font-size: 13px;
+}
+
+.redirectRegister:hover{
+    background-color: #cc85c8;
+    
+}
+
+
+textarea{
+    height: 180px;
+    width: 321px
+}
+
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+    direction: ltr;
+    margin-bottom: 50px;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+th,tr{
+text-align: center;
+}  
+
+tr:nth-child(even) {
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+  
+
+a.iconDelete,.iconEdite{
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.iconDelete:hover{
+    color: rgb(255, 0, 0);
+}
+
+.iconEdite:hover{
+    color: rgb(75, 75, 239);
+}
+.iconEditeAll{
+    color: #0964b0;
+    cursor: pointer;
+}
+.iconEditeAll:hover{
+    color: #3375ab;
+}
+.selectBox{
+    border: none;
+    border-radius: 2px;
+}
+select option {
+    outline-color: #1beb22;
+}
+
+
+.ajaxResult{
+    width: 100%; 
+    background: #8e8e8e;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.emptyDb{
+    text-align: center;
+    color: rgb(209, 34, 34);
+    direction: ltr;
+}
+
+
+
+.modal_overlay {
+    background: #575757ad;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    
+}
+.modal_editeAll {
+    background: #f9f9f9ad;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* display: none; */
+    
+}
+
+.modal {
+    background: white;
+    margin: 103px auto;
+    width: 60%;
+    direction: rtl;
+    padding: 50px;
+    position: relative;
+    border-radius: 10px;
+    min-height: 250px;
+    
+}
+span.close_edit_box {
+position: absolute;
+cursor: pointer;
+color: red;
+left: 14px;
+top: 9px;
+font-size: 30px;
+
+}
+span.close_edit_box:hover{
+    color: rgb(189, 73, 73);
+}
+.content_edit_box input{
+    direction: ltr;
+border-radius: 3px;
+}
+
+input.custom-image-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #B7C4CF;
+  }  
+
+input[type="file"] {
+    position: relative;
+  }
+  
+  input[type="file"]::file-selector-button {
+    width: 136px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    top: 15px;
+    left: 178px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    top: 19px;
+    left: 202px;
+    color: #0964b0;
+    content: "Image Profile";
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+  
+
+  .imageProfile{
+    width: 50px;
+    height:50px;
+    border-radius: 41px;
+    border: 1px solid #7e7e7e;
+    cursor: pointer;
+  }
+
+  .deleteAll{
+    color: red;
+  }
+  .deleteAll:hover{
+    color: rgb(204, 73, 73);
+    }
+  .tool_box {
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+    padding: 9px;
+    background: rgb(255,165,0);
+    background: linear-gradient(42deg, rgb(240 240 240) 37%, rgb(255 255 255) 36%, rgb(182, 182, 182) 81%, rgb(208 208 208) 81%);
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 2px #848484;
+  }
+  .tool_box:hover{
+    box-shadow: 0px 0px 8px 2px #646464;
+  }
+  .tool_box h3{
+    color: #434343;
+    padding: 15px;
+  }
+
+
+  .alinCenter{
+    text-align: center;
+  }
+
+  label{
+    text-align: left;
+  }
