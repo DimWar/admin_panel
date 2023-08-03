@@ -80,7 +80,7 @@
                             <a href="?edite_user=<?= $values['phone']; ?>"><span class="material-symbols-outlined iconEdite open" >edit</span></a>
                             <!-- Ediet Modal Box -->
                             
-                            <div class="modal_editeAll">
+                            <!-- <div class="modal_editeAll">
                                     <div class="modal">
                                         <span class="material-symbols-outlined close_edit_box">cancel</span>
                                         <h2>Ediet <span style="color:red;">All</span> Users</h2>
@@ -92,9 +92,9 @@
                                         <input type="text" name="bioUpdate" placeholder="Biography">
                                         <input type="text" name="roleUpdate" placeholder="Roles (0=>user / 1=>post / 2=>admin)" maxlength="1">
                                         <input type="submit" class="submitUpdate submitHoverUpdate"  onclick="return confirm('Are You Sure to Update this All Item?\n ');">
-                                        </div>
-                                    </div> 
-                            </div>
+                                    </div>
+                                </div> 
+                            </div> -->
                         </td> 
                     </tr>
                     
