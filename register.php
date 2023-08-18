@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $imageName = $_FILES['upload_image']['name'] ;
     
 
-    #all inputs
+    #all inputs verify
     if (validateData($params)) {
         if(isUserExists($phone)){
             setErrorAndRedirect('Phone exist please try again .','') ;
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  }
 #end verify form
 
-#start delete user by action delete
+#start delete user 
 $actionDelete = $_GET['delete_user'] ?? null;
 $actionEdite = $_GET['edite_user'] ?? null;
 if (isset($actionDelete) && $actionDelete!='all') {
@@ -68,7 +68,7 @@ if ($actionDelete == 'all') {
     setErrorAndRedirect('.all users deleted ','') ;
     die();
 }
-#end delete user by action delete
+#end edite user by action 
 if (isset($actionEdite) == 'all') {
     redirect("edite.php?edit=$actionEdite ") ;  
 }

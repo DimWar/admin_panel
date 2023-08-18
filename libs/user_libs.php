@@ -1,12 +1,7 @@
 <?php
 #add user in the data base `users`
-function createUser(array $userData,string $imageName = ''):bool{
+function createUser(array $userData ,string $imageName = ''):bool{
     global $pdo ;
-    // $name = $userData['data'][0] ;
-    // $email = $userData['data'][1] ;
-    // $phone = $userData['data'][2] ;
-    // $pass = $userData['data'][3] ;
-    // $bio = $userData['data'][4] ;
     $name = $userData['name'] ;
     $email = $userData['email'] ;
     $phone = $userData['phone'] ;

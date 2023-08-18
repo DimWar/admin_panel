@@ -2,7 +2,7 @@
 
 define('SITE_TITLE','OPT');
 
-define('BASE_URL','http://localhost/git%20hub/2project/register.php');
+define('BASE_URL','http://localhost/git%20hub/2project/admin_panel/register.php');
 
 $base_path = __DIR__ . '/../' ;
 
